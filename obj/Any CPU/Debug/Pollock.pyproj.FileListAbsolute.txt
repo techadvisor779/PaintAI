@@ -1,0 +1,2 @@
+C:\Users\Alan\source\repos\Pollock\obj\Any CPU\Debug\Pollock.pyproj.SuggestedBindingRedirects.cache
+C:\Users\Alan\source\repos\Pollock\obj\Any CPU\Debug\Pollock.pyproj.CoreCompileInputs.cache

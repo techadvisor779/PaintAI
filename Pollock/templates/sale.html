@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" debug="True">
+    <title>Martin House Gift Shop</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/StyleSheet2.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="/" class="navbar-brand">MyPollock</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="{{ url_for('home') }}">Home</a></li>
+                            <li><a href="{{ url_for('about') }}">About</a></li>
+                            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                            <li><a href="{{ url_for('sale') }}">   Gift Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Gift Shop</h1><br />
+    <div class="column">
+        <center>
+            <h2>9 x 7 in &nbsp;&nbsp; 9.99 Print</h2>
+            <label for="fname"><h4>Quantity:</h4></label>
+            <input type="number" id="fname1" style="width: 50px;" name="fname_qty1" value="0">
+            <img src="https://www.moca.org/storage/app/uploads/public/55e/775/674/thumb_820_1120_0_0_0_auto.jpg" style="width:90px;height:70px;padding-left:0px">
+            <br /><br />
+            <h2>11 x 8.5 in &nbsp;&nbsp; 24.99 on Canvas</h2>
+            <label for="fname"><h4>Quantity:</h4></label>
+            <input type="number" id="fname2" style="width: 50px;" name="fname_qty2" value="0">
+            <img src="https://www.moca.org/storage/app/uploads/public/55e/775/674/thumb_820_1120_0_0_0_auto.jpg" style="width:110px;height:85px;padding-left:0px">
+            <br /><br />
+        </center>
+    </div>
+    <div class="column">
+        <center>
+            <h2>13 x 11 in &nbsp;&nbsp; 54.99 on Canvas</h2>
+            <label for="fname"><h4>Quantity:</h4></label>
+            <input type="number" id="fname3" style="width: 50px;" name="fname_qty3" value="0">
+            <img src="https://www.moca.org/storage/app/uploads/public/55e/775/674/thumb_820_1120_0_0_0_auto.jpg" style="width: 130px; height: 110px; padding-left: 0px">
+            <br /><br />
+            <h2>17 x 13 in &nbsp;&nbsp; 129.99 on Canvas</h2>
+            <label for="fname"><h4>Quantity:</h4></label>
+            <input type="number" id="fname4" style="width: 50px;" name="fname_qty4" value="0">
+            <img src="https://www.moca.org/storage/app/uploads/public/55e/775/674/thumb_820_1120_0_0_0_auto.jpg" style="width: 170px; height: 130px; padding-left: 0px">
+            <br /><br />
+        </center>
+    </div>
+    <div class="column">
+        <center>
+            <h2>&emsp;&emsp; Family Heirloom Special</h2>
+            <h2>&emsp; &emsp;&emsp;&emsp;36 x 24 in &emsp;169.99 on Canvas</h2>
+            <label for="fname"><h4>Quantity:</h4></label>
+            <input type="number" id="fname5" style="width: 50px;" name="fname_qty5" value="0">
+            <img src="https://www.moca.org/storage/app/uploads/public/55e/775/674/thumb_820_1120_0_0_0_auto.jpg" style="width: 360px; height: 240px; padding-left: 0px">
+            <br /><br /><br /><br />
+        </center>
+    </div>
+    <center>
+        <p><label for="fname">&emsp;&emsp;&emsp;   Enter name as yoou want the painting signed</label></p>
+        <input type="text" id="fname" name="fname" style="width: 250px;" value="Pollock">&emsp;<br>
+    </center>
+    <script>
+        var image = document.createElement('img');
+        image.src = localStorage.getItem('imgData');
+        //canvas.appendChild(image);
+        console.log(image);
+        c.drawImage(image, 0, 0);
+        c.drawImage(image, 200, 220);
+        c.drawImage(image, 200, 320);
+        c.drawImage(image, 400, 220);
+        c.drawImage(image, 400, 440);
+
+    </script>
+    <br />
+    <a href="{{ url_for('preview') }}"><input type="submit" value="Preview"></a>
+</body>
+</html>

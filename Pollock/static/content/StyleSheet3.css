@@ -1,0 +1,177 @@
+﻿
+body {
+    color: #fff;
+    background-image: none;
+    background-size: 100% 1584px;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 40pt;
+    padding-left: 0pt;
+    overflow: visible;
+}
+
+.container {
+    padding-right: 65px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    .container:before,
+    .container:after {
+        display: table;
+        content: " "
+    }
+
+    .container:after {
+        clear: both
+    }
+
+    .container:before,
+    .container:after {
+        display: table;
+        content: " "
+    }
+
+    .container:after {
+        clear: both
+    }
+
+.container > .navbar-header,
+.container > .navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.column {
+    column-width: 500px;
+    display:block;
+    padding-left:500px;
+}
+
+.column2 {
+    font-family: 'Book Antiqua';
+    font-size: 36px;
+    font:bold;
+    column-width: 400px;
+    padding-right: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+.column3 {
+    display: block;
+    column-width: 400px;
+    word-wrap: normal;
+    padding-top: 20px;
+    padding-left: 600px;
+    padding-right: 300px;
+    border: 0px;
+    margin: 0px;
+    font-size: 24px;
+}
+
+.container .img {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 0px;
+    border: 10px;
+}
+
+.container .img2 {
+    position: relative;
+    padding-left: 70px;
+    padding-right: 0px;
+}
+
+.container .img3 {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 0px;
+}
+
+.container .img4 {
+    position: relative;
+    padding-left: 80px;
+    padding-right: 40px;
+}
+
+.container .img5 {
+    position: relative;
+    padding-left: 31px;
+    padding-right: 0px;
+}
+
+.textColmn {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.container {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+
+.hero {
+height: 100%;
+width: 100%;
+text-align: center;
+}
+
+h1 {
+    font-family: papyrus, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 2.0;
+    text-shadow: 2px 3px 5px black;
+}
+
+h2 {
+    font-family: papyrus, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 1.1;
+    text-shadow: 2px 3px 5px black;
+}
+
+h3 {
+    font-family: papyrus, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.1;
+    text-shadow: 2px 3px 5px black;
+}
+
+
+p3 {
+    text-align: justify;
+    margin: 0px 0;
+    padding: 5px;
+    border: 0px solid #999;
+}
+
+

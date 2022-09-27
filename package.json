@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "esbuild": "^0.15.7",
+    "file-saver": "^2.0.5",
+    "html-to-image": "^1.10.8"
+  }
+}

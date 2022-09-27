@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8a94f7ad-14a7-4304-8576-ecd798cf9b8e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>Pollock;images;src;Pollock\templates;Pollock\templates</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>Pollock</Name>
+    <RootNamespace>Pollock</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+    <WebBrowserPort>
+    </WebBrowserPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Pollock\MyPollock_t.py" />
+    <Compile Include="Pollock\static\content\MyPollock.py" />
+    <Compile Include="Pollock_t.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="Pollock\__init__.py" />
+    <Compile Include="Pollock\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pollock\" />
+    <Folder Include="Pollock\images\" />
+    <Folder Include="Pollock\static\" />
+    <Folder Include="Pollock\static\content\" />
+    <Folder Include="Pollock\static\fonts\" />
+    <Folder Include="Pollock\static\scripts\" />
+    <Folder Include="Pollock\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JavaScript.js" />
+    <Content Include="libman.json" />
+    <Content Include="Pollock\images\back.png" />
+    <Content Include="Pollock\images\EdMartin.png" />
+    <Content Include="Pollock\images\NewBG.jpg" />
+    <AdditionalFiles Include="Pollock\images\style_pallet00.jpg">
+      <Publish>True</Publish>
+    </AdditionalFiles>
+    <Content Include="Pollock\images\style_pallet01.jpg" />
+    <Content Include="Pollock\images\style_pallet02.jpg" />
+    <Content Include="Pollock\static\content\site - Special.css" />
+    <Content Include="Pollock\static\content\StyleSheet1.css" />
+    <Content Include="Pollock\static\content\StyleSheet2.css" />
+    <Content Include="Pollock\static\content\StyleSheet3.css" />
+    <Content Include="Pollock\static\scripts\pollock.js" />
+    <Content Include="Pollock\templates\history.html" />
+    <Content Include="Pollock\templates\layout2.html" />
+    <Content Include="Pollock\templates\mondrian.html" />
+    <Content Include="Pollock\templates\monet.html" />
+    <Content Include="Pollock\templates\pollock.html" />
+    <Content Include="Pollock\templates\preview.html" />
+    <Content Include="Pollock\templates\sale.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="Pollock\static\content\bootstrap.css" />
+    <Content Include="Pollock\static\content\bootstrap.min.css" />
+    <Content Include="Pollock\static\content\site.css" />
+    <Content Include="Pollock\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Pollock\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Pollock\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Pollock\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Pollock\static\scripts\bootstrap.js" />
+    <Content Include="Pollock\static\scripts\bootstrap.min.js" />
+    <Content Include="Pollock\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Pollock\static\scripts\jquery-1.10.2.js" />
+    <Content Include="Pollock\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="Pollock\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="Pollock\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Pollock\static\scripts\jquery.validate.js" />
+    <Content Include="Pollock\static\scripts\jquery.validate.min.js" />
+    <Content Include="Pollock\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Pollock\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Pollock\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="Pollock\static\scripts\respond.js" />
+    <Content Include="Pollock\static\scripts\respond.min.js" />
+    <Content Include="Pollock\static\scripts\_references.js" />
+    <Content Include="Pollock\templates\about.html" />
+    <Content Include="Pollock\templates\contact.html" />
+    <Content Include="Pollock\templates\index.html" />
+    <Content Include="Pollock\templates\layout.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

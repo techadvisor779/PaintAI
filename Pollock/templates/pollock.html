@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" debug="True">
+    <title>Paint like Pollock</title>
+    <link href="../static/content/site.css" rel="stylesheet" />
+    <img id="img_pollock" src="https://www.theartstory.org/images20/works/pollock_jackson_5.jpg" width="120" height="80" hidden="True" />
+    <img id="img_pollock2" src="https://i.pinimg.com/736x/ab/99/2f/ab992f6d4997597c7a42dd181eee2017--jackson-pollock-print-design.jpg" width="120" height="80" hidden="True" />
+    <img id="img_pollock3" src="https://images-na.ssl-images-amazon.com/images/I/A1JeHXqWugL._SL1500_.jpg" width="120" height="80" hidden="True" />
+    <img id="clear" src="https://th.bing.com/th/id/R.3d0ae93491d4ebe866b41f7d2e4afe56?rik=ldVff3Du1w5ieA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fE%2fE%2fc%2fZ%2fd%2fr%2fcommon-button-blue-hi.png&ehk=tvjw7I%2ftAE6qa%2by2xXj1qfMnpxVjVMfA3Cjdxayky9c%3d&risl=&pid=ImgRaw&r=0" hidden="false"></img>
+    <img id="undo" src="https://th.bing.com/th/id/R.3d0ae93491d4ebe866b41f7d2e4afe56?rik=ldVff3Du1w5ieA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fE%2fE%2fc%2fZ%2fd%2fr%2fcommon-button-blue-hi.png&ehk=tvjw7I%2ftAE6qa%2by2xXj1qfMnpxVjVMfA3Cjdxayky9c%3d&risl=&pid=ImgRaw&r=0" hidden="false"></img>
+</head>
+
+<body>
+    {% block content %}
+    <h1><b>Paint Like Pollock</b></h1>
+    <canvas id="canvas1"></canvas>
+    <script src="../static/scripts/pollock.js"></script>
+    <center>
+        <a href="{{ url_for('preview') }}"><button id="btnDownload" class=" btn">   Preview and Save   </button></a>
+    </center>
+    {% endblock %}
+</body>
+   
+</html>

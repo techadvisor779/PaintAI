@@ -1,0 +1,145 @@
+﻿
+body {
+    color:black;
+    background: url("NewBG2.jpg");
+    background-size: 100% 1750px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 40pt;
+    padding-left: 0pt;
+    overflow: scroll;
+}
+
+.h1 {
+    color: black;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.h2 {
+    width: 250px;
+    padding-left: 0px;
+    color: black;
+    text-align: center;
+}
+
+.h3 {
+    width: 250px;
+    padding-left: 0px;
+    color: black;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: auto;
+    display: grid;
+    height:fit-content;
+}
+
+.column2 {    
+    column-width: 400px;
+    padding-left: 200px;
+    padding-right: 30px;
+    border: 0px;
+    margin: 0px;
+}
+
+.column3 {
+    color: black;    
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin: 0px;
+    float: left;
+}
+
+.container .img {
+    position: relative;
+    padding-left: 160px;
+    padding-right: 0px;
+}
+
+.container .img2 {
+    position: relative;
+    padding-left: 190px;
+    padding-right: 50px;
+}
+
+.container .img3 {
+    position: relative;
+    padding-left: 150px;
+    padding-right: 0px;
+}
+
+.container .img4 {
+    position: relative;
+    padding-left: 80px;
+    padding-right: 40px;
+}
+
+.container .img5 {
+    position: relative;
+    padding-left: 31px;
+    padding-right: 0px;
+}
+
+.textColmn {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+
+.container {
+    position: relative;
+    left: 0px;
+    top: 0;
+    padding-right: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+
+.hero {
+    height: 100%;
+    width: auto;
+    text-align: center;
+}
+
+h1 {
+    padding-left: 0px;
+}
+
+p {
+    text-align: justify;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+p2 {
+    text-align: justify;
+    margin: 10px 0;
+    padding: 5px;
+    width: 500px;
+    padding-right: 50px;
+}
