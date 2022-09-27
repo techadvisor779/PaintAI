@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Preview Your Creation</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/StyleSheet3.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="/" class="navbar-brand">MyPollock</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="{{ url_for('home') }}">Home</a></li>
+                            <li><a href="{{ url_for('history') }}">History</a></li>
+                            <li><a href="{{ url_for('about') }}">About</a></li>
+                            <li><a href="{{ url_for('contact') }}">Contact</a></li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <h2>Your Creation</h2>
+        <br />
+        <canvas id="canvas1"></canvas>
+        <br />
+        <h2>Right Click to Save</h2>
+    </center>
+    <script>
+        const canvas = document.getElementById('canvas1')
+        canvas.width = innerWidth;
+        canvas.height = innerHeight;
+        var c = canvas.getContext('2d');
+        var recentImageURI = sessionStorage.getItem('imgData');
+        document.querySelector("canvas1").setAttribute("src", recentImageURI);
+        document.appendChild(canvas, recentImageURI);
+        c.strokeStyle = 'Black';
+        c.strokeRect(300, 0, 900, 600);
+    </script>
+
+</body>
+</html>

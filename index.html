@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "layout.html" %}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin House A.I. </title>
+</head>
+{% block content %}
+<body>
+    <div class="container">
+        <div class="hero">
+            <center>
+                <h1><b>Martin House</h1>
+                <h3>&emsp; Click a Painting to Start</h3></b>
+                <br />
+                <h1>Pollock  &emsp; &emsp; &ensp; &ensp; &ensp; &ensp;  Mondrian &emsp; &emsp; &emsp;  &ensp; &emsp; Monet</h1>
+                <div class="column">
+                    <div class="img">
+                        <a href="{{ url_for('pollock') }}">
+                            <img src="https://www.moca.org/storage/app/uploads/public/55e/775/674/thumb_820_1120_0_0_0_auto.jpg" width=150px height=120px alt="Pollock">
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img2">
+                        <a href="{{ url_for('mondrian') }}">
+                            <img src="https://www.artst.org/wp-content/uploads/2020/08/Piet-Mondrian-Tableau-I.jpg.webp" width=120px height=150px alt="Mondrian">
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img3">
+                        <a href="{{ url_for('monet') }}">
+                            <img src="https://www.claude-monet.com/images/paintings/poppies.jpg" width=150px height=120px alt="Monet">
+                        </a>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+</body>
+{% endblock %}
+</html>
